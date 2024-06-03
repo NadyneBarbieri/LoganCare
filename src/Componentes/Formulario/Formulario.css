@@ -1,0 +1,106 @@
+.Container-form{
+    margin: 60px auto;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 15px var(--cor);
+    background-color:#Faf9f1 ;
+    border-radius: 15px;
+    width: 1000px;
+}
+
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.Title{
+    text-align: left;
+    color: var(--fonte);
+    font-size: 60px;
+    padding: 30px;
+    
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border: var(--cor) 2px solid;
+    border-radius: 15px;
+    outline: none;
+    background-color:var(--form); 
+    margin: 10px auto;
+    min-width: 500px;
+    max-width:500px;
+    min-height: 30px;
+}
+form p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.message{
+    min-height: 150px;
+}
+
+::placeholder {
+    font-size: 15px;
+    color:var(--cor); /* Cor que você deseja para o placeholder */
+}
+
+.button{
+    margin: 15px 0 30px;
+    outline: none;
+    height: 40px;
+    text-align: center;
+    width: 130px;
+    border-radius: 10px;
+    background-color:var(--form); 
+    border: 2px solid var(--fonte);
+    color: var(--cor);
+    letter-spacing: 1px;
+    text-shadow: 0;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.50s ease;
+}
+
+
+@media (max-width: 768px) {
+    .Container-form {
+      table-layout: auto;
+      margin: 40px auto;
+      backdrop-filter: blur(5px);
+      background-color: white;
+      border-radius: 15px;
+      max-width: 350px;
+      min-height: 700px;
+    }
+
+    .Title{
+        text-align: left;
+        color: var(--fonte);
+      
+        
+    }
+    
+    .form{
+        display: flex;
+        align-items: center;
+        padding: 8px;
+        border: var(--cor) 2px solid;
+        border-radius: 15px;
+        outline: none;
+        background-color:var(--form); 
+        margin: 20px auto;
+        min-width: 250px;
+        max-width:50px;
+        min-height: 30px;
+    }
+    
+    .message{
+        min-height: 150px;
+    }
+}

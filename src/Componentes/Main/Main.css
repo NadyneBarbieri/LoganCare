@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap");
+
+main {
+  margin: 64px auto;
+  backdrop-filter: blur(5px);
+  background-color:#Faf9f1;
+  border-radius: 15px;
+  max-width: 1000px;
+  min-height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+}
+
+.imagens{
+  max-width: 100px;
+  min-width: 100px;
+  margin: 1rem;
+}
+.texto {
+    margin: 3rem 0 0 8rem;
+}
+.texto p{
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.label {
+  z-index: 1;
+  background-color: #111;
+  border: 2px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  margin: 15px 0 0 20px;
+  transform: scale(1.5);
+}
+
+.label .bola {
+  border: solid black 2px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: -2px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .bola {
+  transform: translateX(24px);
+}
+.carrossel{
+  width: 100%;
+}
+
+/* versao piquininha */
+@media (max-width: 768px) {
+  
+main {
+  margin: 64px auto;
+  backdrop-filter: blur(5px);
+  background-color: white;
+  border-radius: 15px;
+  max-width: 1000px;
+  min-height: 130px;
+  display: flex;
+}
+
+.header {
+  width: 100%;
+  display:inline;
+}
+
+.imagens{
+  margin:0 5rem;
+  align-items: center;
+  max-width: 100px;
+}
+
+.texto {
+  margin: 15px;
+  color: black;
+  display: flex;
+}
+}
+

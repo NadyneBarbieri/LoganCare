@@ -1,0 +1,70 @@
+.sobre{
+  padding: 0 18rem 0 0;
+  margin-left: 9rem;
+}
+
+.esquerda {
+  flex-grow: 1; /* Para ocupar todo o espaço restante */
+  max-width: 50%; 
+  position: relative;
+  padding: 3rem;
+  margin: 64px auto;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 0px 15px var(--cor);
+  background-color: var(--card);
+  border-radius: 15px;
+  max-width: 800px;
+  min-height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+.sobre p {
+  font-size: 23px;
+}
+
+.sobremim {
+  position: fixed; /* Define a posição como absoluta para posicionar em relação ao pai (.esquerda) */
+  bottom: 0; /* Posiciona a imagem no rodapé */
+  right: 0; /* Posiciona a imagem à direita */
+  z-index: -1;
+  max-width: 28rem;
+  width: 100%;
+}
+
+.esquerdaSobreMim{
+  display: none;
+}
+@media (max-width: 900px) {
+  .esquerda {
+    padding: 0;
+    max-width: 100%; 
+    table-layout: auto;
+    margin: 40px auto;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 15px var(--cor);
+    background-color: var(--card);
+    border-radius: 15px;
+    min-width: 330px;
+    height: 100%;
+    position: relative; /* Adiciona position:relative para .esquerda */
+  }
+  .esquerda h1{
+    padding: 1rem 3rem ;
+  }
+.esquerda p {
+  padding: 0 3rem;
+}
+  .esquerdaSobreMim{
+    display: flex; 
+    max-width: 28rem;
+    width: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .sobremim{
+    display: none;
+  }
+}

@@ -1,0 +1,91 @@
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px auto;
+  backdrop-filter: blur(5px);
+  background-color: #Faf9f1;
+  border-radius: 15px;
+  padding: 1rem;
+  max-width: 1000px;
+  min-height: 1.5rem;
+  } 
+  .burger-menu {
+    display: none;
+  }
+  .burger-bar {
+    margin: 4px 0 5px;
+    width: 3rem;
+    height: 0.3rem;
+    background-color:black;
+    border-radius: 0.5rem;
+  }
+
+  nav ul{
+    display: flex;
+    gap: 10vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    align-items: center;
+  }
+  
+  nav ul li a{
+    align-items: center;
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+    font-size: 40px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 20px; 
+  }
+
+@media (max-width: 768px) {
+  .burger-menu {
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .menu.visivel {
+    display: flex; /* Torna o menu visível */
+    flex-direction: column; /* Define a direção como coluna */
+    align-items: center;
+  }
+  .menu.hidden {
+    display: none; /* Oculta o menu */
+  }
+
+  nav ul li a.hidden {
+    display: none; /* Oculta os itens do menu */
+  }
+
+  nav ul{
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 5px;
+    align-items:start;
+  }
+
+  nav {
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 15px var(--cor);
+    background-color: #Faf9f1;
+    border-radius: 15px;
+    max-width: 19rem;
+    gap: 10px;
+  }
+nav ul li a{
+  font-size: 10px;
+  margin: 0;
+}
+  .pesquisa{
+    align-self:flex-start;
+  } 
+
+}
