@@ -1,22 +1,33 @@
-import React from "react";
-import './Projetos.css'
+import React, { useState } from "react";
+import './Projetos.css';
 
 const Projetos = (props) => {
+    const [showMoreInfo, setShowMoreInfo] = useState(false);
+
+    const handleButtonClick = () => {
+        setShowMoreInfo(!showMoreInfo);
+    };
 
     return (
-        <div class="cards">
-            <div class="image">
-            <img src={props.img} alt="" id={props.id} />
+        <div className="cards">
+            <div className="image">
+                <img src={props.img} alt="" id={props.id} />
             </div>
-            <div class="text-content">
-            <h3>{props.nome}</h3>
-            <p>{props.sobre}</p>
-            <div className="botao">
-            <button id="Visitar" onClick={() => window.open(props.href, "_blank")}>Comprar</button>
+            <div className="text-content">
+                <h3>{props.nome}</h3>
+                <p>{props.sobre}</p>
+                {showMoreInfo && (
+                    <div className="more-info">
+                        <p>{props.moreInfo}</p>
+                    </div>
+                )}
+                <div className="botao">
+                    <button id="Visitar" onClick={handleButtonClick}>
+                        {showMoreInfo ? "Show Less" : "Show More"}
+                    </button>
+                </div>
             </div>
-            
         </div>
-    </div>
     );
 };
 
