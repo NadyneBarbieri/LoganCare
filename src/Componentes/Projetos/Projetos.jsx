@@ -23,7 +23,7 @@ const Projetos = (props) => {
                 )}
                 <div className="botao">
                     <button id="Visitar" onClick={handleButtonClick}>
-                        {showMoreInfo ? "Show Less" : "Show More"}
+                        {showMoreInfo ? "Mostrar menos" : "Saiba mais"}
                     </button>
                 </div>
             </div>

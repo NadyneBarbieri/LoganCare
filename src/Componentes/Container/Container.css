@@ -9,7 +9,7 @@
 
 body {
   align-items: center;
-  background: var(--background) ;
+  background: var(--background) no-repeat center/cover;
   }
 
   .container{
